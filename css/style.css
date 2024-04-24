@@ -1,0 +1,134 @@
+.cawp-post-category-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-direction: row;
+	text-align: center;
+}
+
+.cawp-col-1, .cawp-col-2, .cawp-col-3, .cawp-col-4, .cawp-col-5, .cawp-col-6, 
+.cawp-col-7, .cawp-col-8, .cawp-col-9, .cawp-col-10, .cawp-col-11, .cawp-col-12 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.cawp-col-1 { flex-basis: 100%; }
+.cawp-col-2 { flex-basis: 50%; }
+.cawp-col-3 { flex-basis: 33.33333%; }
+.cawp-col-4 { flex-basis: 25%; }
+.cawp-col-5 { flex-basis: 20%; }
+.cawp-col-6 { flex-basis: 16.66666%; }
+.cawp-col-7 { flex-basis: 14.2857%; }
+.cawp-col-8 { flex-basis: 12.5%; }
+.cawp-col-9 { flex-basis: 75%; }
+.cawp-col-10 { flex-basis: 11.1111%; }
+.cawp-col-11 { flex-basis: 9.0909%; }
+.cawp-col-12 { flex-basis: 8.3333%; }
+
+.pcge-wrapper {
+	position: relative;
+}
+
+.pcge-style-1 *,
+.pcge-style-1:before,
+.pcge-style-1:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.pcge-style-1 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.pcge-style-1:before,
+.pcge-style-1:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.pcge-style-1:before {
+  width: 0;
+  height: 1px;
+}
+
+.pcge-style-1:after {
+  height: 0;
+  width: 1px;
+}
+
+.pcge-style-1 .caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.pcge-style-1 h3,
+.pcge-style-1 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.pcge-style-1 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.pcge-style-1:hover img,
+.pcge-style-1.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.pcge-style-1:hover:before,
+.pcge-style-1.hover:before,
+.pcge-style-1:hover:after,
+.pcge-style-1.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.pcge-style-1:hover:before,
+.pcge-style-1.hover:before {
+  width: 40px;
+}
+
+.pcge-style-1:hover:after,
+.pcge-style-1.hover:after {
+  height: 40px;
+}
+
+.pcge-style-1:hover h3,
+.pcge-style-1.hover h3,
+.pcge-style-1:hover h4,
+.pcge-style-1.hover h4 {
+  opacity: 1;
+}
+
+.pcge-style-1:hover h3,
+.pcge-style-1.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
